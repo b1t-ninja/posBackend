@@ -52,3 +52,8 @@ The existing endpoints are:
     }
 ]
 ```
+As a side note, if build for release, the response time thanks to the cache is quite impressive.
+<img width="957" alt="Screenshot 2024-12-30 at 13 27 34" src="https://github.com/user-attachments/assets/dfff2e50-ba8a-4821-bad6-b00046a0e809" />
+I was definetly surprised, especailly when comparing it with the time it takes to get that data from Notion <br>
+<img width="959" alt="Screenshot 2024-12-30 at 13 29 08" src="https://github.com/user-attachments/assets/34f5ba1c-86a7-47cd-8426-0bb057c2389c" />
+The downside of this cache is that more memory is consumed as it stays within memory even after the request. So if this was a large data set, we might run into a problem.
